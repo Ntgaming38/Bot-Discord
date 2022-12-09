@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  music-disc:
+    image: JinMori:1.2.5
+    container_name: Bot By Jin Mori
+    restart: always
+    environment:
+      TOKEN: "your_token"
+      PREFIX: "+"
+      PLAYING: "+help | music"
+      COLOR: "#FFFFFF"
+      DEFAULT_VOLUME: 50
+      MAX_VOLUME: 100
+      AUTO_LEAVE: "true"
+      AUTO_LEAVE_COOLDOWN: 5000
+      DISPLAY_VOICE_STATE: "true"
+    ports:
+      - 33333:33333
